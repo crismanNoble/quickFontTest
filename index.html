@@ -2,449 +2,7 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
-<style>
-@font-face {
-	font-family: "tt-icon-font";
-	src: url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.eot');
-	src: url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.eot#iefix') format('embedded-opentype'),
-			url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.ttf') format('truetype'),
-			url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.woff') format('woff'),
-			url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.svg#tt-icon-font') format('svg');
-	font-weight:400;
-	font-style:normal;
-}
-[class*=tts-icon-font-]:before {
-	font-family:tt-icon-font!important;
-	text-transform:none;
-	font-style:normal!important;
-	font-weight:400!important;
-	font-variant:normal!important;
-	text-transform:none!important;
-	speak:none;
-	line-height:1;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-}
-.proof {
-	font-family:tt-icon-font!important;
-	text-transform:none;
-	font-style:normal!important;
-	font-weight:400!important;
-	font-variant:normal!important;
-	text-transform:none!important;
-	speak:none;
-	line-height:1;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	text-align:left;
-/*	display:none*/
-}
-.proof-heading {
-/*	display:none*/
-}
-.icon-examples {
-	font-family:monospace;
-	background-color:#fff;
-	padding:10px;
-	text-align:center;
-	margin-top:20px;
-	border-collapse:collapse;
-	border:20px solid #999
-}
-.icon-examples th {
-	padding:3px;
-	border-top:20px solid #999
-}
-.icon-examples tr {
-	border-top:1px solid #e5e5e5;
-	box-sizing:border-box;
-	height:28px
-}
-.tts-icon-font-hamburger:before,
-.tts-icon-font-menu-toggle:before {
-	content:"m"
-}
-.tts-icon-font-sign-out:before {
-	content:"l"
-}
-.tts-icon-font-gear:before,
-.tts-icon-font-settings:before {
-	content:"g"
-}
-.tts-icon-font-personal-info,
-.tts-icon-font-user:before {
-	content:"a"
-}
-.tts-icon-font-alert:before {
-	content:"W"
-}
-.tts-icon-font-search:before {
-	content:"s"
-}
-.tts-icon-font-close:before {
-	content:"h"
-}
-.tts-icon-font-notifications:before {
-	content:"b"
-}
-.tts-icon-font-chevron-up:before {
-	content:"k"
-}
-.tts-icon-font-chevron-right:before {
-	content:"j"
-}
-.tts-icon-font-chevron-down:before {
-	content:"c"
-}
-.tts-icon-font-chevron-left:before {
-	content:"d"
-}
-.tts-icon-font-inventory:before {
-	content:"\007C"
-}
-.tts-icon-font-card-flip:before {
-	content:"\e006"
-}
-.tts-icon-font-farm:before {
-	content:"\e010"
-}
-.tts-icon-font-uncle-sam:before {
-	content:"\0028"
-}
-.tts-icon-font-apartment-building:before {
-	content:"f"
-}
-.tts-icon-font-man-with-tie:before {
-	content:"\e011"
-}
-.tts-icon-font-mailbox:before {
-	content:"i"
-}
-.tts-icon-font-federal-taxes:before {
-	content:"\e015"
-}
-.tts-icon-font-income:before {
-	content:"n"
-}
-.tts-icon-font-deductions-credits:before {
-	content:"o"
-}
-.tts-icon-font-state-taxes:before {
-	content:"p"
-}
-.tts-icon-font-review:before {
-	content:"q"
-}
-.tts-icon-font-married:before {
-	content:"r"
-}
-.tts-icon-font-children-dependents:before {
-	content:"X"
-}
-.tts-icon-font-own-home:before {
-	content:"t"
-}
-.tts-icon-font-rent-home:before {
-	content:"u"
-}
-.tts-icon-font-stocks-bonds:before {
-	content:"v"
-}
-.tts-icon-font-own-business:before {
-	content:"w"
-}
-.tts-icon-font-your-car:before {
-	content:"x"
-}
-.tts-icon-font-calculator:before {
-	content:"y"
-}
-.tts-icon-font-new-job:before {
-	content:"z"
-}
-.tts-icon-font-maximize-deductions:before {
-	content:"A"
-}
-.tts-icon-font-medical-expenses:before {
-	content:"B"
-}
-.tts-icon-font-retirement-income:before {
-	content:"C"
-}
-.tts-icon-font-social-security:before {
-	content:"D"
-}
-.tts-icon-font-misc-income:before {
-	content:"E"
-}
-.tts-icon-font-student-in-family:before {
-	content:"F"
-}
-.tts-icon-font-retirement:before {
-	content:"G"
-}
-.tts-icon-font-unemployed:before {
-	content:"H"
-}
-.tts-icon-font-education-expenses:before {
-	content:"I"
-}
-.tts-icon-font-charity-donations:before {
-	content:"J"
-}
-.tts-icon-font-employment-expenses:before {
-	content:"K"
-}
-.tts-icon-font-other-deductions:before {
-	content:"L"
-}
-.tts-icon-font-gambling:before {
-	content:"M"
-}
-.tts-icon-font-family:before {
-	content:"N"
-}
-.tts-icon-font-moved-to-new-state:before {
-	content:"O"
-}
-.tts-icon-font-explore-on-my-own:before {
-	content:"P"
-}
-.tts-icon-font-guide-me:before {
-	content:"Q"
-}
-.tts-icon-font-money-finder:before {
-	content:"R"
-}
-.tts-icon-font-taxes:before {
-	content:"S"
-}
-.tts-icon-font-healthcare:before {
-	content:"T"
-}
-.tts-icon-font-transferring-data:before {
-	content:"U"
-}
-.tts-icon-font-import-w2:before {
-	content:"V"
-}
-.tts-icon-font-bank:before {
-	content:"Y"
-}
-.tts-icon-font-usa:before {
-	content:"Z"
-}
-.tts-icon-font-presidential:before {
-	content:"0"
-}
-.tts-icon-font-live-answers:before {
-	content:"2"
-}
-.tts-icon-font-upload-to-cloud:before {
-	content:"3"
-}
-.tts-icon-font-call-us:before {
-	content:"4"
-}
-.tts-icon-font-chat-online:before {
-	content:"5"
-}
-.tts-icon-font-community:before {
-	content:"6"
-}
-.tts-icon-font-audit-defense:before {
-	content:"7"
-}
-.tts-icon-font-irs-confirmation:before {
-	content:"8"
-}
-.tts-icon-font-track-your-refund:before {
-	content:"9"
-}
-.tts-icon-font-start-by-typing:before {
-	content:"\0021"
-}
-.tts-icon-font-camera:before {
-	content:"\0022"
-}
-.tts-icon-font-low-light:before {
-	content:"\0023"
-}
-.tts-icon-font-minimize-tilt:before {
-	content:"\0024"
-}
-.tts-icon-font-hold-steady:before {
-	content:"\0025"
-}
-.tts-icon-font-closeness:before {
-	content:"\0026"
-}
-.tts-icon-font-detect-corners:before {
-	content:"\0027"
-}
-.tts-icon-font-upgrade:before {
-	content:"e"
-}
-.tts-icon-font-pencil:before {
-	content:"\0029"
-}
-.tts-icon-font-calendar:before {
-	content:"\002A"
-}
-.tts-icon-font-thumbs-up:before {
-	content:"\002C"
-}
-.tts-icon-font-printer:before {
-	content:"-"
-}
-.tts-icon-font-help:before {
-	content:"."
-}
-.tts-icon-font-email:before {
-	content:"/"
-}
-.tts-icon-font-credit-card:before {
-	content:":"
-}
-.tts-icon-font-checkmark:before {
-	content:";"
-}
-.tts-icon-font-lock:before {
-	content:"<"
-}
-.tts-icon-font-share-with-friends:before {
-	content:"="
-}
-.tts-icon-font-star:before {
-	content:">"
-}
-.tts-icon-font-question-mark:before {
-	content:"?"
-}
-.tts-icon-font-alternative-minimum-tax:before {
-	content:"@"
-}
-.tts-icon-font-additional-tax-payments:before {
-	content:"["
-}
-.tts-icon-font-other-return-info:before {
-	content:"]"
-}
-.tts-icon-font-taxable-income:before {
-	content:"^"
-}
-.tts-icon-font-taxes-and-credits:before {
-	content:"_"
-}
-.tts-icon-font-payments:before {
-	content:"`"
-}
-.tts-icon-font-food:before {
-	content:"{"
-}
-.tts-icon-font-edit:before {
-	content:"}"
-}
-.tts-icon-font-start:before {
-	content:"\007E"
-}
-.tts-icon-font-trash:before {
-	content:"\005c"
-}
-.tts-icon-font-arrow-right:before {
-	content:"\e000"
-}
-.tts-icon-font-save:before {
-	content:"\e001"
-}
-.tts-icon-font-timer:before {
-	content:"\e002"
-}
-.tts-icon-font-tools:before {
-	content:"\e003"
-}
-.tts-icon-font-more-info:before {
-	content:"\e004"
-}
-.tts-icon-font-bookmark:before {
-	content:"\e005"
-}
-.tts-icon-font-shopping-cart:before {
-	content:"\e007"
-}
-.tts-icon-font-go-to-link:before {
-	content:"\e008"
-}
-.tts-icon-font-mobile-phone:before {
-	content:"\e009"
-}
-.tts-icon-font-tablet:before {
-	content:"\e00a"
-}
-.tts-icon-font-faq:before {
-	content:"\e00b"
-}
-.tts-icon-font-geolocation-arrow:before {
-	content:"\e00c"
-}
-.tts-icon-font-paper-check:before {
-	content:"\e00d"
-}
-.tts-icon-font-tax-center:before {
-	content:"\e00e"
-}
-.tts-icon-font-birthday-cake:before {
-	content:"\e00f"
-}
-.tts-icon-font-personal-info:before {
-	content:"a"
-}
-.tts-icon-font-plus:before {
-	content:"\e012"
-}
-.tts-icon-font-minus:before {
-	content:"\e013"
-}
-.tts-icon-font-turbotax-checkball:before {
-	content:"\e014"
-}
-.tts-icon-font-file:before {
-	content:"\e016"
-}
-.tts-icon-font-question:before {
-	content:"1"
-}
-.tts-icon-font-close-alt:before {
-	content:"+"
-}
-.tts-icon-font-double-chevron-up:before {
-	content:"\e017"
-}
-.tts-icon-font-download-file:before {
-	content:"\e018"
-}
-.tts-icon-font-equals:before {
-	content:"\e019"
-}
-.tts-icon-font-facebook:before {
-	content:"\e01b"
-}
-.tts-icon-font-twitter:before {
-	content:"\e01a"
-}
-.tts-icon-font-checked:before {
-	content:"\e01e"
-}
-.tts-icon-font-unchecked:before {
-	content:"\e01d"
-}
 
-
-
-
-
-
-</style>
 </head>
 <body>
 <table class="icon-examples">
@@ -1339,5 +897,442 @@
             </tr>
           </tbody></table>
 </body>
+<style>
+@font-face {
+	font-family: "tt-icon-font";
+	src: url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.eot');
+	src: url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.eot#iefix') format('embedded-opentype'),
+			url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.ttf') format('truetype'),
+			url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.woff') format('woff'),
+			url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.svg#tt-icon-font') format('svg');
+	font-weight:400;
+	font-style:normal;
+}
+[class*=tts-icon-font-]:before {
+	font-family:tt-icon-font!important;
+	text-transform:none;
+	font-style:normal!important;
+	font-weight:400!important;
+	font-variant:normal!important;
+	text-transform:none!important;
+	speak:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+.proof {
+	font-family:tt-icon-font!important;
+	text-transform:none;
+	font-style:normal!important;
+	font-weight:400!important;
+	font-variant:normal!important;
+	text-transform:none!important;
+	speak:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	text-align:left;
+/*	display:none*/
+}
+.proof-heading {
+/*	display:none*/
+}
+.icon-examples {
+	font-family:monospace;
+	background-color:#fff;
+	padding:10px;
+	text-align:center;
+	margin-top:20px;
+	border-collapse:collapse;
+	border:20px solid #999
+}
+.icon-examples th {
+	padding:3px;
+	border-top:20px solid #999
+}
+.icon-examples tr {
+	border-top:1px solid #e5e5e5;
+	box-sizing:border-box;
+	height:28px
+}
+.tts-icon-font-hamburger:before,
+.tts-icon-font-menu-toggle:before {
+	content:"m"
+}
+.tts-icon-font-sign-out:before {
+	content:"l"
+}
+.tts-icon-font-gear:before,
+.tts-icon-font-settings:before {
+	content:"g"
+}
+.tts-icon-font-personal-info,
+.tts-icon-font-user:before {
+	content:"a"
+}
+.tts-icon-font-alert:before {
+	content:"W"
+}
+.tts-icon-font-search:before {
+	content:"s"
+}
+.tts-icon-font-close:before {
+	content:"h"
+}
+.tts-icon-font-notifications:before {
+	content:"b"
+}
+.tts-icon-font-chevron-up:before {
+	content:"k"
+}
+.tts-icon-font-chevron-right:before {
+	content:"j"
+}
+.tts-icon-font-chevron-down:before {
+	content:"c"
+}
+.tts-icon-font-chevron-left:before {
+	content:"d"
+}
+.tts-icon-font-inventory:before {
+	content:"\007C"
+}
+.tts-icon-font-card-flip:before {
+	content:"\e006"
+}
+.tts-icon-font-farm:before {
+	content:"\e010"
+}
+.tts-icon-font-uncle-sam:before {
+	content:"\0028"
+}
+.tts-icon-font-apartment-building:before {
+	content:"f"
+}
+.tts-icon-font-man-with-tie:before {
+	content:"\e011"
+}
+.tts-icon-font-mailbox:before {
+	content:"i"
+}
+.tts-icon-font-federal-taxes:before {
+	content:"\e015"
+}
+.tts-icon-font-income:before {
+	content:"n"
+}
+.tts-icon-font-deductions-credits:before {
+	content:"o"
+}
+.tts-icon-font-state-taxes:before {
+	content:"p"
+}
+.tts-icon-font-review:before {
+	content:"q"
+}
+.tts-icon-font-married:before {
+	content:"r"
+}
+.tts-icon-font-children-dependents:before {
+	content:"X"
+}
+.tts-icon-font-own-home:before {
+	content:"t"
+}
+.tts-icon-font-rent-home:before {
+	content:"u"
+}
+.tts-icon-font-stocks-bonds:before {
+	content:"v"
+}
+.tts-icon-font-own-business:before {
+	content:"w"
+}
+.tts-icon-font-your-car:before {
+	content:"x"
+}
+.tts-icon-font-calculator:before {
+	content:"y"
+}
+.tts-icon-font-new-job:before {
+	content:"z"
+}
+.tts-icon-font-maximize-deductions:before {
+	content:"A"
+}
+.tts-icon-font-medical-expenses:before {
+	content:"B"
+}
+.tts-icon-font-retirement-income:before {
+	content:"C"
+}
+.tts-icon-font-social-security:before {
+	content:"D"
+}
+.tts-icon-font-misc-income:before {
+	content:"E"
+}
+.tts-icon-font-student-in-family:before {
+	content:"F"
+}
+.tts-icon-font-retirement:before {
+	content:"G"
+}
+.tts-icon-font-unemployed:before {
+	content:"H"
+}
+.tts-icon-font-education-expenses:before {
+	content:"I"
+}
+.tts-icon-font-charity-donations:before {
+	content:"J"
+}
+.tts-icon-font-employment-expenses:before {
+	content:"K"
+}
+.tts-icon-font-other-deductions:before {
+	content:"L"
+}
+.tts-icon-font-gambling:before {
+	content:"M"
+}
+.tts-icon-font-family:before {
+	content:"N"
+}
+.tts-icon-font-moved-to-new-state:before {
+	content:"O"
+}
+.tts-icon-font-explore-on-my-own:before {
+	content:"P"
+}
+.tts-icon-font-guide-me:before {
+	content:"Q"
+}
+.tts-icon-font-money-finder:before {
+	content:"R"
+}
+.tts-icon-font-taxes:before {
+	content:"S"
+}
+.tts-icon-font-healthcare:before {
+	content:"T"
+}
+.tts-icon-font-transferring-data:before {
+	content:"U"
+}
+.tts-icon-font-import-w2:before {
+	content:"V"
+}
+.tts-icon-font-bank:before {
+	content:"Y"
+}
+.tts-icon-font-usa:before {
+	content:"Z"
+}
+.tts-icon-font-presidential:before {
+	content:"0"
+}
+.tts-icon-font-live-answers:before {
+	content:"2"
+}
+.tts-icon-font-upload-to-cloud:before {
+	content:"3"
+}
+.tts-icon-font-call-us:before {
+	content:"4"
+}
+.tts-icon-font-chat-online:before {
+	content:"5"
+}
+.tts-icon-font-community:before {
+	content:"6"
+}
+.tts-icon-font-audit-defense:before {
+	content:"7"
+}
+.tts-icon-font-irs-confirmation:before {
+	content:"8"
+}
+.tts-icon-font-track-your-refund:before {
+	content:"9"
+}
+.tts-icon-font-start-by-typing:before {
+	content:"\0021"
+}
+.tts-icon-font-camera:before {
+	content:"\0022"
+}
+.tts-icon-font-low-light:before {
+	content:"\0023"
+}
+.tts-icon-font-minimize-tilt:before {
+	content:"\0024"
+}
+.tts-icon-font-hold-steady:before {
+	content:"\0025"
+}
+.tts-icon-font-closeness:before {
+	content:"\0026"
+}
+.tts-icon-font-detect-corners:before {
+	content:"\0027"
+}
+.tts-icon-font-upgrade:before {
+	content:"e"
+}
+.tts-icon-font-pencil:before {
+	content:"\0029"
+}
+.tts-icon-font-calendar:before {
+	content:"\002A"
+}
+.tts-icon-font-thumbs-up:before {
+	content:"\002C"
+}
+.tts-icon-font-printer:before {
+	content:"-"
+}
+.tts-icon-font-help:before {
+	content:"."
+}
+.tts-icon-font-email:before {
+	content:"/"
+}
+.tts-icon-font-credit-card:before {
+	content:":"
+}
+.tts-icon-font-checkmark:before {
+	content:";"
+}
+.tts-icon-font-lock:before {
+	content:"<"
+}
+.tts-icon-font-share-with-friends:before {
+	content:"="
+}
+.tts-icon-font-star:before {
+	content:">"
+}
+.tts-icon-font-question-mark:before {
+	content:"?"
+}
+.tts-icon-font-alternative-minimum-tax:before {
+	content:"@"
+}
+.tts-icon-font-additional-tax-payments:before {
+	content:"["
+}
+.tts-icon-font-other-return-info:before {
+	content:"]"
+}
+.tts-icon-font-taxable-income:before {
+	content:"^"
+}
+.tts-icon-font-taxes-and-credits:before {
+	content:"_"
+}
+.tts-icon-font-payments:before {
+	content:"`"
+}
+.tts-icon-font-food:before {
+	content:"{"
+}
+.tts-icon-font-edit:before {
+	content:"}"
+}
+.tts-icon-font-start:before {
+	content:"\007E"
+}
+.tts-icon-font-trash:before {
+	content:"\005c"
+}
+.tts-icon-font-arrow-right:before {
+	content:"\e000"
+}
+.tts-icon-font-save:before {
+	content:"\e001"
+}
+.tts-icon-font-timer:before {
+	content:"\e002"
+}
+.tts-icon-font-tools:before {
+	content:"\e003"
+}
+.tts-icon-font-more-info:before {
+	content:"\e004"
+}
+.tts-icon-font-bookmark:before {
+	content:"\e005"
+}
+.tts-icon-font-shopping-cart:before {
+	content:"\e007"
+}
+.tts-icon-font-go-to-link:before {
+	content:"\e008"
+}
+.tts-icon-font-mobile-phone:before {
+	content:"\e009"
+}
+.tts-icon-font-tablet:before {
+	content:"\e00a"
+}
+.tts-icon-font-faq:before {
+	content:"\e00b"
+}
+.tts-icon-font-geolocation-arrow:before {
+	content:"\e00c"
+}
+.tts-icon-font-paper-check:before {
+	content:"\e00d"
+}
+.tts-icon-font-tax-center:before {
+	content:"\e00e"
+}
+.tts-icon-font-birthday-cake:before {
+	content:"\e00f"
+}
+.tts-icon-font-personal-info:before {
+	content:"a"
+}
+.tts-icon-font-plus:before {
+	content:"\e012"
+}
+.tts-icon-font-minus:before {
+	content:"\e013"
+}
+.tts-icon-font-turbotax-checkball:before {
+	content:"\e014"
+}
+.tts-icon-font-file:before {
+	content:"\e016"
+}
+.tts-icon-font-question:before {
+	content:"1"
+}
+.tts-icon-font-close-alt:before {
+	content:"+"
+}
+.tts-icon-font-double-chevron-up:before {
+	content:"\e017"
+}
+.tts-icon-font-download-file:before {
+	content:"\e018"
+}
+.tts-icon-font-equals:before {
+	content:"\e019"
+}
+.tts-icon-font-facebook:before {
+	content:"\e01b"
+}
+.tts-icon-font-twitter:before {
+	content:"\e01a"
+}
+.tts-icon-font-checked:before {
+	content:"\e01e"
+}
+.tts-icon-font-unchecked:before {
+	content:"\e01d"
+}
+</style>
 </html>
 
