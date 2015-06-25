@@ -554,9 +554,11 @@
 </style>
 <!--[if lt IE 9]>
   <script>
-  function r(f){/in/(document.readyState)?setTimeout(r,9,f):f()}
-  r(function(){
-	var head = document.getElementsByTagName('head')[0],
+
+var tid = setInterval( function () {
+    if ( document.readyState !== 'complete' ) return;
+    clearInterval( tid );       
+    var head = document.getElementsByTagName('head')[0],
 	    style = document.createElement('style');
 	style.type = 'text/css';
 	style.styleSheet.cssText = ':before,:after{content:none !important}';
@@ -564,7 +566,9 @@
 	setTimeout(function(){
 	    head.removeChild(style);
 	}, 0);
-	});
+}, 40 );
+	
+
   </script>
 <![endif]-->
 </head>
