@@ -463,7 +463,7 @@
 	}
 
 	.wtf:before {
-	font-family: tt-icon-font!important;
+	font-family: tt-icon-font-local!important;
   text-transform: none;
   content: attr(data-icon);
   font-style: normal!important;
@@ -487,9 +487,78 @@
   float:right;
 	}
 
+	@font-face {
+    font-family: 'Avenir';
+    src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Light.eot');
+    src: url('../https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Light.eot?#iefix') format('embedded-opentype'),
+      url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Light.woff') format('woff'),
+      url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Light.ttf') format('truetype'),
+      url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Light.svg#Avenir') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Roman.eot');
+    src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Roman.woff') format('woff'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Roman.ttf') format('truetype'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Roman.svg#Avenir') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Medium.eot');
+    src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Medium.woff') format('woff'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Medium.ttf') format('truetype'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Medium.svg#Avenir') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Heavy.eot');
+    src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Heavy.woff') format('woff'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Heavy.ttf') format('truetype'),
+         url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Heavy.svg#Avenir') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.avenirHeavy {
+	font-family: 'Avenir';
+	font-weight: 800;
+}
+.avenirMedium {
+	font-family: 'Avenir';
+	font-weight: 600;
+}
+.avenirRoman {
+	font-family: 'Avenir';
+	font-weight: 400;
+}
+.avenirLight {
+	font-family: 'Avenir';
+	font-weight: 200;
+}
+
+
+
 </style>
 </head>
 <body>
+
+<h1 class="avenirHeavy">Avenir Heavy</h1>
+<h1 class="avenirMedium">Avenir Medium</h1>
+<h1 class="avenirRoman">Avenir Roman</h1>
+<h1 class="avenirLight">Avenir Light</h1>
+
 <a href="#" class="tts-account-dropdown-link wtf">My Account</a>
 <table class="icon-examples">
             <tbody><tr>
