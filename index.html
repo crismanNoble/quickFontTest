@@ -554,6 +554,7 @@
 </style>
 <!--[if lt IE 9]>
   <script>
+  document.addEventListener('DOMContentLoaded', function () {
 	var head = document.getElementsByTagName('head')[0],
 	    style = document.createElement('style');
 	style.type = 'text/css';
@@ -562,6 +563,7 @@
 	setTimeout(function(){
 	    head.removeChild(style);
 	}, 0);
+	});
   </script>
 <![endif]-->
 </head>
