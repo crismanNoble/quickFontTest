@@ -5,7 +5,7 @@
 
 <style>
 	@font-face {
-		font-family: "tt-icon-font";
+		font-family:"tt-icon-font";
 		src: url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.eot');
 		src: url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.eot#iefix') format('embedded-opentype'),
 				url('https://lib.intuitcdn.net/1.6/fonts/tt-icon-font.ttf') format('truetype'),
@@ -15,7 +15,7 @@
 		font-style:normal;
 	}
 	@font-face {
-		font-family: "tt-icon-font-local";
+		font-family:"tt-icon-font-local";
 		src: url('https://github.intuit.com/pages/cnoble/pages-playground/fonts/tt-icon-font.eot');
 		src: url('https://github.intuit.com/pages/cnoble/pages-playground/fonts/tt-icon-font.eot#iefix') format('embedded-opentype'),
 				url('https://github.intuit.com/pages/cnoble/pages-playground/fonts/tt-icon-font.ttf') format('truetype'),
@@ -36,19 +36,6 @@
 		-webkit-font-smoothing:antialiased;
 		-moz-osx-font-smoothing:grayscale;
 	}
-	[class*=tts-icon-font-].local:before {
-		font-family:tt-icon-font!important;
-		text-transform:none;
-		font-style:normal!important;
-		font-weight:400!important;
-		font-variant:normal!important;
-		text-transform:none!important;
-		speak:none;
-		line-height:1;
-		-webkit-font-smoothing:antialiased;
-		-moz-osx-font-smoothing:grayscale;
-	}
-
 	.proof {
 		font-family:tt-icon-font!important;
 		text-transform:none;
@@ -463,31 +450,6 @@
 		content:"\e01d"
 	}
 
-	.wtf:before {
-	font-family: tt-icon-font-local!important;
-  text-transform: none;
-  content: attr(data-icon);
-  font-style: normal!important;
-  font-weight: 400!important;
-  font-variant: normal!important;
-  text-transform: none!important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: absolute;
-  left: -21px;
-  font-size: 18px;
-  content: 'a';
-	}
-
-	.wtf {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  float:right;
-	}
-
 	@font-face {
     font-family: 'Avenir';
     src: url('https://lib.intuitcdn.net/1.6/fonts/AvenirLT-Light.eot');
@@ -549,6 +511,9 @@
 	font-weight: 200;
 }
 
+h1 {
+	line-height: 1;
+}
 
 
 </style>
@@ -567,6 +532,8 @@ var tid = setInterval( function () {
 	    head.removeChild(style);
 	}, 0);
 }, 40 );
+
+document.onreadystatechange
 	
 
   </script>
@@ -579,7 +546,6 @@ var tid = setInterval( function () {
 <h1 class="avenirRoman">Avenir Roman</h1>
 <h1 class="avenirLight">Avenir Light</h1>
 
-<a href="#" class="tts-account-dropdown-link wtf">My Account</a>
 <table class="icon-examples">
             <tbody><tr>
               <th>cdn icon</th>
@@ -587,7 +553,6 @@ var tid = setInterval( function () {
               <th>name / class</th>
               <th>charachter</th>
               <th>css content</th>
-              <th>local icon</th>
             </tr>
             <tr>
             	
@@ -596,7 +561,6 @@ var tid = setInterval( function () {
               <td>personal-info</td>
               <td>a</td>
               <td>a</td>
-              <td><span class="tts-icon-font-personal-info local"></span></td>
             </tr>
             <tr>
             	
@@ -605,7 +569,6 @@ var tid = setInterval( function () {
               <td>hamburger</td>
               <td>m</td>
               <td>m</td>
-              <td><span class="tts-icon-font-hamburger local"></span></td>
             </tr>
             <tr>
             	
@@ -614,7 +577,6 @@ var tid = setInterval( function () {
               <td>sign-out</td>
               <td>l</td>
               <td>l</td>
-              <td><span class="tts-icon-font-sign-out local"></span></td>
             </tr>
             <tr>
             	
@@ -623,7 +585,6 @@ var tid = setInterval( function () {
               <td>settings</td>
               <td>g</td>
               <td>g</td>
-              <td><span class="tts-icon-font-settings local"></span></td>
             </tr>
             <tr>
               <td><span class="tts-icon-font-user"></span></td>
@@ -631,7 +592,7 @@ var tid = setInterval( function () {
               <td>user</td>
               <td>a</td>
               <td>a</td>
-              <td><span class="tts-icon-font-user local"></span></td>
+
             </tr>
             <tr>
               <td><span class="tts-icon-font-alert"></span></td>
@@ -639,7 +600,6 @@ var tid = setInterval( function () {
               <td>alert</td>
               <td>W</td>
               <td>W</td>
-              <td><span class="tts-icon-font-alert"></span></td>
             </tr>
             <tr>
               <td> <span class="tts-icon-font-search"></span></td>
